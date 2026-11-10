@@ -124,6 +124,7 @@ The backend builds into one container image (`backend/Dockerfile`) that holds th
 
 1. Build both images, or run `scripts/release.sh` to build and smoke-test them.
 2. Provide PostgreSQL and set `DATABASE_URL`, `PUBLIC_BASE_URL` and your sign-in client IDs.
+   Set `DEV_AUTH_ENABLED=false` and your own `ADMIN_BOOTSTRAP_EMAILS`. The development Compose file turns developer sign-in on and uses an example admin address by default, and developer sign-in accepts any email, so leaving it on lets anyone sign in as an admin.
 3. Run migrations with the `migrate` service before starting a new API version.
 4. Serve the web image over HTTPS. Use HTTPS for any non-local admin access.
 
