@@ -307,13 +307,13 @@ a.bg-byl-action {
 .byl-header {
 	min-height: 72px;
 }
-.byl-nav a {
+.byl-visitor .byl-nav a {
 	color: var(--byl-text-secondary);
 }
-.byl-nav a:hover {
+.byl-visitor .byl-nav a:hover {
 	background: var(--byl-surface);
 }
-.byl-nav a[aria-current='page'] {
+.byl-visitor .byl-nav a[aria-current='page'] {
 	color: var(--byl-text);
 	font-weight: 700;
 	box-shadow: inset 0 -3px 0 var(--byl-action);
